@@ -1,1 +1,53 @@
 trabalhando com o Git
+
+Microsoft Windows [versão 10.0.22621.3155]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\estud>git --version (Ver a versão do Git)
+git version 2.39.1.windows.1
+
+C:\Users\estud>cd documents (comando cd + nome da pasta para entrar na pasta)
+
+C:\Users\estud\Documents>cd DevOps (comando cd + nome da pasta DevOps)
+
+C:\Users\estud\Documents\DevOps>git clone git@github.com:francastro-dev/Devops-EAD.git (comando Git clone para fazer clone da pasta no repositório + endereço do repositorio)
+
+****copia do repositorio na maquina****
+
+Cloning into 'Devops-EAD'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), 6.27 KiB | 916.00 KiB/s, done.
+
+C:\Users\estud\Documents\DevOps>git add . (comando para adicionar
+fatal: not a git repository (or any of the parent directories): .git (erro pq não está no repositorio do git)
+
+C:\Users\estud\Documents\DevOps>cd DevOps-ead (comando cd para entrar na pasta DevOps e poder enviar os novos arquivos, só usa se for necessário)
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git add . (git add -vincula arquivo criado a pasta no repositorio, colocando em uma área de espera, git add . verificar todos os arquivos novos que não foram enviados para o repositorio)
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git commit -m 'Arquivo Criado' (rotulo criado deu erro, tem que executar um git pull)
+error: pathspec 'Criado'' did not match any file(s) known to git
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git pull (verificar se tem alguma atualização para subir para o git)
+Already up to date.
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git add . (tentar novamente, vincular arquivos criados na pasta)
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git commit -m 'Arquivo' (rotulo, texto entre aspas para nomear a ação)
+[main 7fa2380] 'Arquivo'
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Aula DEvOps.txt
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git config --global user.email "francastro.dev@gmail.com" (caso precise atualizar login de email)
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git config -- global user.name "francastro-dev" (atualizando o use name do git)
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git commit -m 'Arquivos" (fazendo o commit caso tenha configurado o user name)
+[main 7fa2380] 'Arquivo'
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Aula DEvOps.txt
+
+C:\Users\estud\Documents\DevOps\Devops-EAD>git push (finaalizar o envio, conectanto com o git e envia os arquivos)
