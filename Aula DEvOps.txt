@@ -60,3 +60,12 @@ Caso tenha, pode se usar o git satus para ver tem alguma atualização.
 Set tiver atualização:
 
 usar novamente o git add ou git add . (vai adiciionar todas as modificações) e em seguida o git commit
+
+
+
+*****Alguns comandos  e Observações:
+
+*Git Diff (mostra qual foi a alteração no arquivo)
+*Git Diff --staged (comando para ver as alterações porém quando já está na staged
+*Git log (mostra o historico de commit)
+*Git checkout -- nomedoaquivo (volta a situação do ultimo commit)
