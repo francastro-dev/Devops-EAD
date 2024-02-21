@@ -69,3 +69,17 @@ usar novamente o git add ou git add . (vai adiciionar todas as modificações) e
 *Git Diff --staged (comando para ver as alterações porém quando já está na staged
 *Git log (mostra o historico de commit)
 *Git checkout -- nomedoaquivo (volta a situação do ultimo commit)
+
+*Git init
+git remote - Quando você deseja estabelecer uma conexão entre seu repositório local e um repositório remoto, como aquele hospedado no GitHub
+A sintaxe básica do comando é a seguinte:
+git remote add apelido url
+
+*git remote: Para listar os repositórios remotos associados ao seu projeto local.
+git remote -v
+
+*git remote remove: Caso você não precise mais de um repositório remoto específico, pode removê-lo com o comando 
+	git remote remove origin
+*git remote add origin url-do-repositorio-no-github
+	git remote add origin url-do-repositorio-no-github
+
